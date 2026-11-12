@@ -1,0 +1,41 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-source
+'1.8'
+-sourcepath
+'/Users/leonardorundo/NetBeansProjects/MyInputConfirm/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2024. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/Users/leonardorundo/NetBeansProjects/MyInputConfirm/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'MyInputConfirm 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' '/Users/leonardorundo/NetBeansProjects/MyInputConfirm/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'MyInputConfirm 1.0-SNAPSHOT API'
+it.unisa.diem.oop.myinputconfirm
+/Users/leonardorundo/NetBeansProjects/MyInputConfirm/src/main/java = 1730982094000
+/Users/leonardorundo/NetBeansProjects/MyInputConfirm/target/reports/apidocs/constant-values.html = 1730982429000
+/Users/leonardorundo/NetBeansProjects/MyInputConfirm/target/reports/apidocs/overview-tree.html = 1730982429000
+/Users/leonardorundo/NetBeansProjects/MyInputConfirm/target/reports/apidocs/index.html = 1730982429000
+/Users/leonardorundo/NetBeansProjects/MyInputConfirm/target/reports/apidocs/allclasses-noframe.html = 1730982429000
+/Users/leonardorundo/NetBeansProjects/MyInputConfirm/target/reports/apidocs/index-all.html = 1730982429000
+/Users/leonardorundo/NetBeansProjects/MyInputConfirm/target/reports/apidocs/deprecated-list.html = 1730982429000
+/Users/leonardorundo/NetBeansProjects/MyInputConfirm/target/reports/apidocs/script.js = 1730982429000
+/Users/leonardorundo/NetBeansProjects/MyInputConfirm/target/reports/apidocs/stylesheet.css = 1730982429000
+/Users/leonardorundo/NetBeansProjects/MyInputConfirm/target/reports/apidocs/help-doc.html = 1730982429000
+/Users/leonardorundo/NetBeansProjects/MyInputConfirm/target/reports/apidocs/allclasses-frame.html = 1730982429000
+/Users/leonardorundo/NetBeansProjects/MyInputConfirm/target/reports/apidocs/package-list = 1730982429000

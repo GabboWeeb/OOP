@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="DiagrammaDiClasse">
+  <ClassDiagramComponents>
+    <Class name="NomeDellaClasse(obbligatorio)" package="it.unisa" visibility="package" xPosition="141.0" yPosition="50.0">
+      <Fields>
+        <Field name="attributoPrivato" type="int" visibility="private"/>
+        <Field name="attributoPubblico" type="Object" visibility="public"/>
+        <Field name="attributoPackage" type="Object" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="metodo" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Superclasse" package="" visibility="public" xPosition="-17.0" yPosition="304.0">
+      <Fields>
+        <Field name="superAttributo" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="superMetodo" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Sottoclasse" package="" visibility="public" xPosition="141.0" yPosition="314.0">
+      <Fields>
+        <Field name="sottoAttributo" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="sottoMetodo" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ClasseCheConosce" package="" visibility="public" xPosition="453.0" yPosition="78.0">
+      <Fields>
+        <Field name="rieferimentoMultiplo" type="ClasseCheNonConosce[]" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ClasseCheNonConosce" package="" visibility="public" xPosition="866.0" yPosition="78.0">
+      <Fields>
+        <Field name="unAttributo" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ClasseAggregataOContenitore" package="" visibility="public" xPosition="453.0" yPosition="285.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ClasseAggreganteOComponente" package="" visibility="public" xPosition="740.0" yPosition="285.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="" source="ClasseCheConosce" target="ClasseCheNonConosce" type="Default" sourceCardinality="0..1" targetCardinality="0..*" collectionType="ArrayList"/>
+    <IsRelation name="is" source="Sottoclasse" target="Superclasse"/>
+    <HasRelation name="" source="ClasseAggregataOContenitore" target="ClasseAggreganteOComponente" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

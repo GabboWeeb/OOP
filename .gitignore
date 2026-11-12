@@ -1,0 +1,13 @@
+#Per ignorare un file usa file.estensione
+
+#Per ignorare tutti i file usa *.estensione
+*.class
+
+#Per ignorare una cartella usa cartella/
+Classi Antonio/
+C++/
+C89/
+.vscode/
+#Per NON ignorare un file usa !file.estensione
+
+#Per ignorare il file solo nella root usa /file.estensione
