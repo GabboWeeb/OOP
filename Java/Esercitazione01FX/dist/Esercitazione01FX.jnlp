@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Esercitazione01FX.jnlp">
+  <information>
+    <title>Esercitazione01FX</title>
+    <vendor>gabri</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Esercitazione01FX.jar" size="2899" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="esercitazione01fx.Esercitazione01FX"  name="Esercitazione01FX" />
+  <update check="always"/>
+</jnlp>

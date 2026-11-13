@@ -12,3 +12,20 @@ Esercitazioni/
 #Per NON ignorare un file usa !file.estensione
 
 #Per ignorare il file solo nella root usa /file.estensione
+/Java/gestioneprodottifatture/nbproject/private/
+/Java/gestioneprodottifatture/build/
+/Java/MyInputConfirm/target/
+/Java/gestioneveicoliamotore/target/
+/Java/DiagrammaTestAntony/nbproject/private/
+/Java/gestioneUnisaAntony/nbproject/private/
+/Java/gestioneUnisaAntony/build/
+/Java/InputConfirmGUI/nbproject/private/
+/Java/gestioneunisa/nbproject/private/
+/Java/gestioneunisa/build/
+/Java/progetto2019Antony/target/
+/Java/TestAHAntony/target/
+/Java/gestionemagazzinoAntony/nbproject/private/
+/Java/ProvePreIntercorsoAntony/nbproject/private/
+/Java/Esercitazione2Antony/nbproject/private/
+/Java/InputConfirmGUI/dist/
+/Java/InputConfirmGUI/build/
