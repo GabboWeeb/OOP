@@ -8,6 +8,7 @@ Classi Antonio/
 C++/
 C89/
 .vscode/
+Esercitazioni/
 #Per NON ignorare un file usa !file.estensione
 
 #Per ignorare il file solo nella root usa /file.estensione
