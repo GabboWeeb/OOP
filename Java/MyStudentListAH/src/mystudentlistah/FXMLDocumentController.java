@@ -6,6 +6,7 @@
 package mystudentlistah;
 
 import java.net.URL;
+import java.util.HashSet;
 import java.util.ResourceBundle;
 import javafx.application.Platform;
 import javafx.beans.property.SimpleStringProperty;
@@ -21,6 +22,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.control.cell.TextFieldTableCell;
 
 /**
  *
@@ -67,6 +69,11 @@ public class FXMLDocumentController implements Initializable {
         codeClm.setCellValueFactory(new PropertyValueFactory("code"));
         /*Con le annotazioni e cose incredibili, scorri il modello, cerca un get con code dopo, case insensitive*/
         
+        //EDITING COLONNE
+        nameClm.setCellFactory(TextFieldTableCell.forTableColumn());
+        surnameClm.setCellFactory(TextFieldTableCell.forTableColumn());
+        codeClm.setCellFactory(TextFieldTableCell.forTableColumn());
+        
     }    
 
     @FXML
@@ -85,8 +92,8 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private void addStudent(ActionEvent event) {
     
-            studentList.add(new Student(nameField.getText(),surnameField.getText(),CodeField.getText()));
-            System.out.println(studentList);
+        studentList.add(new Student(nameField.getText(),surnameField.getText(),CodeField.getText()));
+        System.out.println(studentList);
             
     
     }
@@ -95,6 +102,24 @@ public class FXMLDocumentController implements Initializable {
     private void removeStudent(ActionEvent event) {
         Student s = studentTable.getSelectionModel().getSelectedItem();
         studentList.remove(s);
+    }
+
+    @FXML
+    private void updateCode(TableColumn.CellEditEvent<Student,String> event) {
+        Student s = studentTable.getSelectionModel().getSelectedItem();
+        s.setCode(event.getNewValue());
+    }
+
+    @FXML
+    private void updateName(TableColumn.CellEditEvent<Student,String> event) {
+        Student s = studentTable.getSelectionModel().getSelectedItem();
+        s.setName(event.getNewValue());
+    }
+
+    @FXML
+    private void updateSurname(TableColumn.CellEditEvent<Student,String> event) {
+        Student s = studentTable.getSelectionModel().getSelectedItem();
+        s.setSurname(event.getNewValue());
     }
     
 }
