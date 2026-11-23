@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="MyBPMconverter.jnlp">
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="MyBPMConverter.jnlp">
   <information>
-    <title>MyBPMconverter</title>
-    <vendor>leonardorundo</vendor>
+    <title>MyBPMConverter</title>
+    <vendor>Antonio</vendor>
     <description>null</description>
     <offline-allowed/>
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="MyBPMconverter.jar" size="2400" download="eager" />
+    <jar href="MyBPMConverter.jar" size="3061" download="eager" />
   </resources>
-  <jfx:javafx-desc  width="800" height="600" main-class="mybpmconverter.MyBPMconverter"  name="MyBPMconverter" />
+  <jfx:javafx-desc  width="800" height="600" main-class="mybpmconverter.MyBPMConverter"  name="MyBPMConverter" />
   <update check="always"/>
 </jnlp>
