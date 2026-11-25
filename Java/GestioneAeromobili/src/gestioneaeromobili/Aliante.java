@@ -17,6 +17,10 @@ public class Aliante extends Aeromobile {
         this.efficienza = efficienza;
     }
     
+    public double getEfficienza() {
+        return efficienza;
+    }
+    
     @Override
     public String toString() {
         return super.toString() + " - Tipo = Aliante - efficienza = " + efficienza;

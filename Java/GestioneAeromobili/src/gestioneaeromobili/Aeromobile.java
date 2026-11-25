@@ -17,6 +17,10 @@ public abstract class Aeromobile implements Cloneable, Serializable {
     
     private static int contatore;
     
+    static {
+        contatore = 1;
+    }
+    
     public Aeromobile(String codice) {
         this.codice = codice;
         numeroSequenziale = contatore;
@@ -33,7 +37,7 @@ public abstract class Aeromobile implements Cloneable, Serializable {
     
     @Override
     public String toString() {
-        return "\nAeromobile n. "+ numeroSequenziale + " - Codice = " + codice;
+        return "Aeromobile n. "+ numeroSequenziale + " - Codice = " + codice;
     }
     
 }

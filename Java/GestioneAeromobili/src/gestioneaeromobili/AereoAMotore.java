@@ -17,6 +17,10 @@ public class AereoAMotore extends Aeromobile {
         this.numRotori = numRotori;
     }
     
+    public int getNumRotori() {
+        return numRotori;
+    }
+    
     @Override
     public String toString() {
         return super.toString() + " - Tipo = Aereo a motore - Numero rotori = " + numRotori;

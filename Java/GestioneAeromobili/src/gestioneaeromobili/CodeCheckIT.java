@@ -13,22 +13,30 @@ public class CodeCheckIT implements CodeChecker {
     
     @Override
     public boolean check(String codice) {
-        if(codice.length() != 7)
+        if(codice.length() != 7) {
             return false; 
-        if(!codice.startsWith("IT"))
+        }
+        if(!codice.startsWith("IT")) {
             return false;
-        else if(Character.isLetter(codice.charAt(2)))
+        }
+        if(!Character.isLetter(codice.charAt(2))) {
             return false;
-	else if(Character.isLetter(codice.charAt(3)))
+        }
+	if(!Character.isLetter(codice.charAt(3))) {
             return false;
-	else if(Character.isDigit(codice.charAt(4)))
-            return false; 
-        else if(Character.isDigit(codice.charAt(5)))
+        }
+	if(!Character.isDigit(codice.charAt(4))) {
             return false;
-        else if(Character.isDigit(codice.charAt(6)))
+        } 
+        if(!Character.isDigit(codice.charAt(5))) {
             return false;
-        else 
+        }
+        if(!Character.isDigit(codice.charAt(6))) {
+            return false;
+        }
+        else { 
             return true;
+        }
     }
 }
 

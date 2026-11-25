@@ -17,13 +17,13 @@ public class CodeCheckEN implements CodeChecker {
             return false; 
         if(!codice.startsWith("EN"))
             return false;
-        else if(Character.isDigit(codice.charAt(2)))
+        if(!Character.isDigit(codice.charAt(2)))
             return false;
-	else if(Character.isDigit(codice.charAt(3)))
+	if(!Character.isDigit(codice.charAt(3)))
             return false;
-	else if(Character.isLetter(codice.charAt(4)))
+	if(!Character.isLetter(codice.charAt(4)))
             return false; 
-        else if(Character.isLetter(codice.charAt(5)))
+        if(!Character.isLetter(codice.charAt(5)))
             return false;
         else 
             return true;
