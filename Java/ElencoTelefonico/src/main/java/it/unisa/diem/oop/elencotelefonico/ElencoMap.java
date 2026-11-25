@@ -28,8 +28,8 @@ public class ElencoMap {
         
         /* Esempio con HashMap o TreeMap */
         Map<Persona,String> elencoMap;
-        elencoMap = new  HashMap<>();
-        // elencoMap = new  TreeMap<>();
+        elencoMap = new HashMap<>();
+        //elencoMap = new TreeMap<>();
         
         elencoMap.put(new Persona("Luigi", "Rossi", "tyuio", 34), "08965432");
         elencoMap.put(new Persona("Luigia", "Verdi", "h5reg", 20), "081456732");
@@ -60,8 +60,11 @@ public class ElencoMap {
         
         // Utilizzo del metodo entrySet
         Set<Map.Entry<Persona,String>> elenco_entrySet = elencoMap.entrySet();
+        
         Iterator<Map.Entry<Persona,String>> it = elenco_entrySet.iterator();
+        
         System.out.println(elenco_entrySet);
+        
         while(it.hasNext()){
             Map.Entry<Persona,String> elem = it.next();
             System.out.println(elem.getKey() + " -> " + elem.getValue());

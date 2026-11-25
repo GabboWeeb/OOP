@@ -93,17 +93,18 @@ public class Persona implements Comparable<Persona> {
     public String toString() {
         return "Persona{" + "nome=" + nome + ", cognome=" + cognome + ", codiceFiscale=" + codiceFiscale + ", eta=" + eta + '}';
     }
-
-
+    
+    //HashMap
     @Override
     public int hashCode() {
         int hash = 5;
         hash = 37 * hash + Objects.hashCode(this.codiceFiscale.toUpperCase());
         // Alternativa:
-        // hash = 37 * hash + ( this.codiceFiscale == null ? 0 : this.codiceFiscale.toUpperCase().hashCode() );
+        // hash = 37 * hash + ( this.codiceFiscale == null ? 0 : this.codiceFiscale.toUpperCase().hashCode());
         return hash;
     }
-
+    
+    //HashMap
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -123,10 +124,10 @@ public class Persona implements Comparable<Persona> {
         // Alternativa:
         //return this.codiceFiscale.equalsIgnoreCase(other.codiceFiscale);
     }
-
+    
+    //Mi serve questo metodo per definire una relazione d'ordine per la TreeMap
     @Override
     public int compareTo(Persona o) {
         return codiceFiscale.compareToIgnoreCase(o.codiceFiscale);
     }
-    
 }
