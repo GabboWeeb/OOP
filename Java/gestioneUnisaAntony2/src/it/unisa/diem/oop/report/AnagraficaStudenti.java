@@ -215,7 +215,7 @@ Voto Medio:	24.0
     
     public static AnagraficaStudenti leggiCSV(String nomefile){
         
-        String descrizione = nomefile.split("\\.")[0]; //si prende il nome del file wtfffff (l'array è [descrizione, estensione])
+        String descrizione = nomefile.split("[\r\n\\.]+")[0]; //si prende il nome del file wtfffff (l'array è [descrizione, estensione])
         //. in una regex è un qualsiasi carattere!! non è un . carattere! Ma un solo \ non basta perché nelle stringhe il \ viene formattato come un carattere di escape che non arriva alla regex
         AnagraficaStudenti a=new AnagraficaStudenti(descrizione);
         try(BufferedReader br = new BufferedReader(new FileReader(nomefile))){
