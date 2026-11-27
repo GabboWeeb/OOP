@@ -75,6 +75,15 @@ public class Aeroporto implements Serializable {
     public String toString() {
         StringBuffer sb = new StringBuffer();
         ArrayList<Aeromobile> al = new ArrayList<>(aeromobili.values());
+        /*
+        Collections.sort(al, new Comparator<Aeromobile>() {
+            @Override
+            public int compare(Aeromobile o1, Aeromobile o2) {
+                o1.getNumeroSequenziale() - o2.getNumeroSequenziale();
+            }
+        });
+        */
+        
         for(Aeromobile a : al) {
             sb.append(a.toString()).append("\n");
         }
@@ -86,6 +95,11 @@ public class Aeroporto implements Serializable {
             new BufferedOutputStream(
                 new FileOutputStream(nomefile)))) {
             
+//            if(checker != null) {
+//                
+//            } else {
+//                
+//            }
             dos.writeInt(aeromobili.size());
 
             for (Aeromobile a : aeromobili.values()) {
@@ -134,6 +148,7 @@ public class Aeroporto implements Serializable {
             }
             
         } catch (IOException ex) {
+            //EOFException, Eccezione fine del file e uso un while(true) sopra
             ex.printStackTrace();
             ap = null;
         }
